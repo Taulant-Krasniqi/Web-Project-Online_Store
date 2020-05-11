@@ -1,0 +1,422 @@
+@font-face {
+    font-family: "SF Display";
+    font-weight: 900;
+    src: url("https://sf.abarba.me/SF-UI-Display-Black.otf");
+}
+
+/** Bold */
+@font-face {
+    font-family: "SF Display";
+    font-weight: 700;
+    src: url("https://sf.abarba.me/SF-UI-Display-Bold.otf");
+}
+
+/** Heavy */
+@font-face {
+    font-family: "SF Display";
+    font-weight: 800;
+    src: url("https://sf.abarba.me/SF-UI-Display-Heavy.otf");
+}
+
+/** Light */
+@font-face {
+    font-family: "SF Display";
+    font-weight: 200;
+    src: url("https://sf.abarba.me/SF-UI-Display-Light.otf");
+}
+
+/** Medium */
+@font-face {
+    font-family: "SF Display";
+    font-weight: 500;
+    src: url("https://sf.abarba.me/SF-UI-Display-Medium.otf");
+}
+
+/** Regular */
+@font-face {
+    font-family: "SF Display";
+    font-weight: 400;
+    src: url("https://sf.abarba.me/SF-UI-Display-Regular.otf");
+}
+
+/** Semibold */
+@font-face {
+    font-family: "SF Display";
+    font-weight: 600;
+    src: url("https://sf.abarba.me/SF-UI-Display-Semibold.otf");
+}
+
+/** Thin */
+@font-face {
+    font-family: "SF Display";
+    font-weight: 300;
+    src: url("https://sf.abarba.me/SF-UI-Display-Thin.otf");
+}
+
+/** Ultralight */
+@font-face {
+    font-family: "SF Display";
+    font-weight: 100;
+    src: url("https://sf.abarba.me/SF-UI-Display-Ultralight.otf");
+}
+
+/*---------------------------------------------------------------------------*
+   * SF UI Text
+   *---------------------------------------------------------------------------*/
+
+/** Bold */
+@font-face {
+    font-family: "SF Text";
+    font-weight: 700;
+    src: url("https://sf.abarba.me/SF-UI-Text-Bold.otf");
+}
+
+/** Bold Italic */
+@font-face {
+    font-family: "SF Text";
+    font-weight: 700;
+    font-style: italic;
+    src: url("https://sf.abarba.me/SF-UI-Text-BoldItalic.otf");
+}
+
+/** Heavy */
+@font-face {
+    font-family: "SF Text";
+    font-weight: 800;
+    src: url("https://sf.abarba.me/SF-UI-Text-Heavy.otf");
+}
+
+/** Heavy Italic */
+@font-face {
+    font-family: "SF Text";
+    font-weight: 800;
+    font-style: italic;
+    src: url("https://sf.abarba.me/SF-UI-Text-HeavyItalic.otf");
+}
+
+/** Light */
+@font-face {
+    font-family: "SF Text";
+    font-weight: 200;
+    src: url("https://sf.abarba.me/SF-UI-Text-Light.otf");
+}
+
+/** Light Italic */
+@font-face {
+    font-family: "SF Text";
+    font-weight: 200;
+    font-style: italic;
+    src: url("https://sf.abarba.me/SF-UI-Text-LightItalic.otf");
+}
+
+/** Medium */
+@font-face {
+    font-family: "SF Text";
+    font-weight: 500;
+    src: url("https://sf.abarba.me/SF-UI-Text-Medium.otf");
+}
+
+/** Medium Italic */
+@font-face {
+    font-family: "SF Text";
+    font-weight: 500;
+    font-style: italic;
+    src: url("https://sf.abarba.me/SF-UI-Text-MediumItalic.otf");
+}
+
+/** Regular */
+@font-face {
+    font-family: "SF Text";
+    font-weight: 400;
+    src: url("https://sf.abarba.me/SF-UI-Text-Regular.otf");
+}
+
+/** Regular Italic */
+@font-face {
+    font-family: "SF Text";
+    font-weight: 400;
+    font-style: italic;
+    src: url("https://sf.abarba.me/SF-UI-Text-RegularItalic.otf");
+}
+
+/** Semibold */
+@font-face {
+    font-family: "SF Text";
+    font-weight: 600;
+    src: url("https://sf.abarba.me/SF-UI-Text-Semibold.otf");
+}
+
+/** Semibold Italic */
+@font-face {
+    font-family: "SF Text";
+    font-weight: 600;
+    font-style: italic;
+    src: url("https://sf.abarba.me/SF-UI-Text-SemiboldItalic.otf");
+}
+
+/** Ultrathin */
+@font-face {
+    font-family: "SF Text";
+    font-weight: 100;
+    src: url("https://sf.abarba.me/SF-UI-Text-Ultrathin.otf");
+}
+
+/** Ultrathin Italic */
+@font-face {
+    font-family: "SF Text";
+    font-weight: 100;
+    font-style: italic;
+    src: url("https://sf.abarba.me/SF-UI-Text-UltrathinItalic.otf");
+}
+
+/*---------------------------------------------------------------------------*
+   * SF Mono
+   *---------------------------------------------------------------------------*/
+
+/** Bold */
+@font-face {
+    font-family: "SF Mono";
+    font-weight: 700;
+    src: url("https://sf.abarba.me/SFMono-Bold.otf");
+}
+
+/** Bold Italic */
+@font-face {
+    font-family: "SF Mono";
+    font-weight: 700;
+    font-style: italic;
+    src: url("https://sf.abarba.me/SFMono-BoldItalic.otf");
+}
+
+/** Heavy */
+@font-face {
+    font-family: "SF Mono";
+    font-weight: 800;
+    src: url("https://sf.abarba.me/SFMono-Heavy.otf");
+}
+
+/** Heavy Italic */
+@font-face {
+    font-family: "SF Mono";
+    font-weight: 800;
+    font-style: italic;
+    src: url("https://sf.abarba.me/SFMono-HeavyItalic.otf");
+}
+
+/** Light */
+@font-face {
+    font-family: "SF Mono";
+    font-weight: 200;
+    src: url("https://sf.abarba.me/SFMono-Light.otf");
+}
+
+/** Light Italic */
+@font-face {
+    font-family: "SF Mono";
+    font-weight: 200;
+    font-style: italic;
+    src: url("https://sf.abarba.me/SFMono-LightItalic.otf");
+}
+
+/** Medium */
+@font-face {
+    font-family: "SF Mono";
+    font-weight: 500;
+    src: url("https://sf.abarba.me/SFMono-Medium.otf");
+}
+
+/** Medium Italic */
+@font-face {
+    font-family: "SF Mono";
+    font-weight: 500;
+    font-style: italic;
+    src: url("https://sf.abarba.me/SFMono-MediumItalic.otf");
+}
+
+/** Regular */
+@font-face {
+    font-family: "SF Mono";
+    font-weight: 400;
+    src: url("https://sf.abarba.me/SFMono-Regular.otf");
+}
+
+/** Regular Italic */
+@font-face {
+    font-family: "SF Mono";
+    font-weight: 400;
+    font-style: italic;
+    src: url("https://sf.abarba.me/SFMono-RegularItalic.otf");
+}
+
+/** Semibold */
+@font-face {
+    font-family: "SF Mono";
+    font-weight: 600;
+    src: url("https://sf.abarba.me/SFMono-Semibold.otf");
+}
+
+/** Semibold Italic */
+@font-face {
+    font-family: "SF Mono";
+    font-weight: 600;
+    font-style: italic;
+    src: url("https://sf.abarba.me/SFMono-SemiboldItalic.otf");
+}
+
+body {
+    margin: 0;
+    font-family: 'SF Display';
+}
+
+.nav-bar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333333;
+    font-weight: 400;
+
+}
+
+.li-bar {
+    float: left;
+}
+
+.li-bar a {
+    display: block;
+    color: #D6D6D5;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    opacity: 0.8;
+    transition: 0.3s;
+}
+
+.lisrch {
+    float: right;
+    transition: width 3s;
+}
+
+
+.searchi {
+    float: right;
+    width: 130px;
+    background-color: aliceblue;
+    transition: width 0.3s;
+}
+
+.searchi:hover {
+    width: 190px;
+    
+}
+
+.searchi a {
+    color: #333333;
+}
+
+/* Change the link color to #111 (black) on hover */
+.li-bar a:hover {
+    opacity: 1;
+
+}
+
+input[type=text],
+select {
+    width: 100%;
+    padding: 8px 10px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 0px solid #ccc;
+    font-family: 'SF Display';
+    font-size: 15px;
+    font-weigh: 600;
+    box-sizing: border-box;
+    background-color: aliceblue;
+    -webkit-appearance: none;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    background-color: #e9e9e9;
+    flex-wrap: wrap;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    backdrop-filter: saturate(180%) blur(30px);
+    background-color: rgba(255, 255, 255, 0.58);
+    border-bottom: 1px solid #e5e5e5;
+    border-top: 1px solid #e5e5e5;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.container>div {
+    margin: 10px;
+}
+
+.item {
+    height: 100%;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border: 1px solid #efe6e6;
+    border-radius: 10px;
+    transition: 0.3s;
+    margin: 20px;
+}
+
+.item:hover {
+    -webkit-box-shadow: 0px 0px 18px -15px rgba(0, 0, 0, 0.71);
+    -moz-box-shadow: 0px 0px 18px -15px rgba(0, 0, 0, 0.71);
+    box-shadow: 0px 0px 18px -15px rgba(0, 0, 0, 0.71);
+}
+
+.item>h5 {
+    margin-top: -16px;
+}
+
+
+.image-item>img {
+    max-width: 100%;
+    max-height: 100%;
+
+}
+
+.item>span {
+    padding-left: 20px;
+}
+
+.item-button {
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    color: #FFFFFF;
+    font-family: 'SF Display';
+    font-size: 15px;
+    font-weight: 400;
+    padding: 15px;
+    background-color: #3D94F6;
+    border: solid #c5ddff 2px;
+    text-decoration: none;
+    
+    cursor: pointer;
+    text-align: center;
+    width: 150px;
+}
+
+.cont {
+    display: flex;
+    width: 70%; /*can be in percentage also.*/
+    height: auto;
+    margin: 0 auto;
+    padding: 10px;
+    position: ;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
