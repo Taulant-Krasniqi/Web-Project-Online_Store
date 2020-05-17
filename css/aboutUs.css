@@ -1,0 +1,454 @@
+.nav-bar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333333;
+    font-weight: 400;
+}
+
+.li-bar {
+    float: left;
+}
+
+.li-bar a {
+    display: block;
+    color: #D6D6D5;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    opacity: 0.8;
+    transition: 0.3s;
+}
+
+.lisrch {
+    float: right;
+    transition: width 3s;
+}
+
+.searchi {
+    float: right;
+    width: 130px;
+    background-color: aliceblue;
+    transition: width 0.3s;
+}
+
+.searchi:hover {
+    width: 190px;
+}
+
+.searchi a {
+    color: #333333;
+}
+
+/* Change the link color to #111 (black) on hover */
+
+.li-bar a:hover {
+    opacity: 1;
+}
+
+input[type=text], select {
+    width: 100%;
+    padding: 8px 10px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 0px solid #ccc;
+    font-family: 'SF Display';
+    font-size: 15px;
+    font-weight: 600;
+    box-sizing: border-box;
+    background-color: aliceblue;
+    -webkit-appearance: none;
+}
+
+
+
+
+.p10 {
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	height: 650px;
+	background-image: url("/img/marketing-office-working-business-33999.jpg");
+	background-size: cover;
+	background-position: unset;
+	
+}
+
+.Desc {
+	font-size: 84px;
+	font-weight: 700;
+	line-height: 1.2;
+	letter-spacing: -2px;
+	text-align: center;
+	margin:0;
+	padding: 250px 0 0 0;
+    font-size: 84px;
+	color: rgb(184, 86, 58);
+	font-family: Vaud,sans-serif;
+}
+.Desc2{
+	font-size: 28px;
+	font-weight: 500;
+	line-height: 1.4;
+	letter-spacing: 0.2px;
+	text-align: center;
+	color:#E27D60;
+	font-family: Vaud,sans-serif;
+}
+
+.containerr {
+	width: 100%;
+}
+
+.containerr h1 {
+	font-size: 50px;
+}
+
+
+.about {
+	padding: 5% 0;
+	width: 100%;
+	height: auto;
+	background-color: #fff;
+	font-family: Vaud,sans-serif;
+}
+
+.about .left {
+	padding: 2% 0;
+	float: left;
+	width: 50%;
+	display: inline-block;
+}
+
+.about .right {
+	width: 50%;
+	display: inline-block;
+}
+
+.about .right img {
+	width: 100%
+}
+
+.about .left h1 {
+	text-align: center;
+	color: #26262b;
+	margin: 0 0 10px 0;
+}
+
+.about .left hr {
+	width: 22%;
+	border-top: 2px solid #000;
+	border-bottom: none;
+}
+
+.about .left p {
+	font:18px;
+	line-height: 1.33;
+	letter-spacing: normal;
+	color:#707c86;
+	margin: 40px auto;
+	width: 80%
+}
+
+.mission {
+	padding: 5% 0;
+	width: 100%;
+	height: auto;
+	background-color: #fff;
+	font-family: Vaud,sans-serif;
+}
+
+.mission .right {
+	padding: 2% 0;
+	width: 50%;
+	display: inline-block;
+}
+
+.mission .left {
+	float: left;
+	width: 50%;
+	display: inline-block;
+}
+
+.mission .left img {
+	width: 100%;
+}
+
+.mission .right h1 {
+	text-align: center;
+	color: #26262b;
+	margin: 0 0 10px 0;
+}
+
+.mission .right hr {
+	width: 42%;
+	border-top: 2px solid #000;
+	border-bottom: none;
+}
+
+.mission .right p {
+	font:18px;
+	line-height: 1.33;
+	letter-spacing: normal;
+	color:#707c86;
+	margin: 40px auto;
+	width: 80%
+}
+
+.team {
+	width: 90%;
+	margin: auto;
+	padding: 5% 5%;
+	over-flow: hidden;
+	
+}
+
+.team h1 {
+	text-align: center;
+	color: #26262b;
+	
+}
+
+.team h1 hr {
+	width: 10%;
+	border-top: 2px solid #000;
+	background-color: transperant;
+	border-bottom: none;
+	margin-bottom: 50px;
+}
+
+.team .card {
+	padding-bottom: 20px;
+	padding-top: 20px;
+	position: relative;
+	min-width: 20%;
+	height: 450px !important;
+	height: auto;
+	background-color: #fff;
+	display: inline-block;
+	margin: 40px 6.5%;
+	box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.5);
+	text-align: center;
+}
+
+.card .circle-containerr {
+	position: relative;
+	width: 250px;
+	height: 250px;
+	border: none;
+	border-radius: 50%;
+	margin: auto;
+	color: #fff;
+}
+
+.circle-containerr h1 {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	margin: 0;
+	font-size: 60px;
+	color:#26262b;
+}
+
+.team .card h2 {
+	text-align: center;
+	margin: 30px 0 0 0;
+	color:#26262b;
+}
+
+.team .card h4 {
+	text-align: center;
+	margin: 10px 0 0 0;
+	color:#2c2c31;
+}
+
+.team .card p {
+	width: 250px;
+	margin: 30px auto;
+	text-align: center;
+	color:#707c86;
+	
+}
+
+.clear {
+	clear: both;
+}
+
+/* media */
+
+@media(max-width:1200px) {
+	.mission .right p {
+		font-size: .8rem;
+		margin: 20px auto;
+	}
+	.about .left p {
+		font-size: .8rem;
+		margin: 20px auto;
+	}
+}
+
+@media(max-width:992px) {
+	.about .left {
+		width: 100%;
+	}
+	.about .right {
+		width: 100%;
+	}
+	.mission .left {
+		width: 100%;
+	}
+	.mission .right {
+		width: 100%;
+	}
+	.team .card {
+		width: 40%;
+	}
+}
+
+@media(max-width:768px) {
+	.team .card {
+		width: 100%;
+	}
+	nav {
+		height: 80px;
+	}
+}
+
+.photo{
+	background-size: cover;
+    border-radius:50% 50% 50% 50%;
+    width:250px;
+	height:250px;
+	padding:0;
+	margin:30px 0 0 0;
+}
+
+
+footer{
+    background: #f1f1f1;
+    padding: 90px 0;
+  }
+  
+  .footer-container{
+    max-width: 1300px;
+    margin: auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+  }
+  
+  .logo{
+    padding-top: 50px;
+    width: 280px;
+  }
+  
+  .social-media{
+    margin: 30px 0;
+    padding-left: 25px;
+    
+  }
+  
+  .social-media a{
+    color: #001a21;
+    margin-right: 25px;
+    font-size: 22px;
+    text-decoration: none;
+    transition: .3s linear;
+  }
+  
+  .social-media a:hover{
+    color: #fc5c65;
+  }
+  
+  
+  
+  .right-col h1{
+    font-size: 46px;
+  
+  }
+  
+  .right-col p{
+    font-size: 20px;
+  }
+  
+  .right-col form {
+    
+    padding-top: 39px;
+  }
+
+  .left-col p{
+    padding-top: 10px;
+  }
+  
+  .border{
+    width: 100%;
+    height: 4px;
+    background: #fc5c65;
+  }
+  
+  .newsletter-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  /* .txtb{
+    flex: 1;
+    
+  } */
+  
+  .btn{
+    padding: 18px 40px;
+    font-size: 16px;
+    color: #f1f1f1;
+    background: #fc5c65;
+    border: none;
+    font-weight: 700;
+    outline: none;
+    border-radius: 30px;
+    margin-left: 20px;
+    cursor: pointer;
+    transition: opacity .3s linear;
+  }
+  
+  .btn:hover{
+    opacity: .7;
+  }
+  
+  .page-content{
+    min-height: 100vh;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  @media screen and (max-width:960px) {
+    .footer-container{
+      max-width: 600px;
+    }
+    .right-col{
+      width: 100%;
+      margin-bottom: 60px;
+    }
+  
+    .left-col{
+      width: 100%;
+      text-align: center;
+    }
+  }
+  
+  
+  @media screen and (max-width:700px){
+    .btn{
+      margin: 0;
+      width: 100%;
+      margin-top: 20px;
+      }
+  }
+  

@@ -75,8 +75,8 @@ input[type=text], select {
     text-align: center;
  
     width: 100%;
-    background: #414a50;
-    color: #fcf6df;
+    background: #f1f0eb;
+    color: #112d32;
     text-transform: uppercase;
     letter-spacing: 5px;
     font-weight: bold;
@@ -93,7 +93,7 @@ input[type=text], select {
 }
 
 body {
-    background: #414a50;
+    background: #f1f0eb;;
 }
 
 .wrapper {
