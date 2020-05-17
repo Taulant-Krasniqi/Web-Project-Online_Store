@@ -329,7 +329,7 @@ select {
     border: 0px solid #ccc;
     font-family: 'SF Display';
     font-size: 15px;
-    font-weigh: 600;
+    font-weight: 600;
     box-sizing: border-box;
     background-color: aliceblue;
     -webkit-appearance: none;
@@ -416,7 +416,7 @@ select {
     height: auto;
     margin: 0 auto;
     padding: 10px;
-    position: ;
+    position: 2;
     flex-direction: row;
     flex-wrap: wrap;
 }
