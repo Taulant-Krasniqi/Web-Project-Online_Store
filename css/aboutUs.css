@@ -419,6 +419,8 @@ footer{
     cursor: pointer;
     transition: opacity .3s linear;
   }
+
+  
   
   .btn:hover{
     opacity: .7;
