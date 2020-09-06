@@ -1,28 +1,52 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Login</title>
 
-        <link rel="stylesheet" href="css/loginstyle.css">
-    </head>
+<head>
+    <title>Login</title>
 
-    <body>
+    <link rel="stylesheet" type="text/css" href="css/loginstyle.css">
 
-        <div class="body"></div>
-        <div class="grad"></div>
-        <div class="header">
-          <div>Flip<span>Store</span></div>
-        </div>
-        <br>
-        <div class="login">
+
+    
+
+
+
+</head>
+
+<body>
+    
+
+    <div class="body"></div>
+    <div class="grad"></div>
+    <div class="header">
+        <div>Flip<span>Store</span></div>
+    </div>
+    <br>
+    <div class="login">
+
+
+        <form id="forma1" action="Proccess.php" method="post">
             <input type="text" placeholder="username" name="user"><br>
             <input type="password" placeholder="password" name="password"><br>
-            <input type="button" value="Login">
-            <input type="button2" id="button2" value="Go Back" onclick="window.location = 'index.html';">
+            <!-- <input name ="Login" type="button" value="Login"> -->
+            <input type="hidden">
+            <!-- <input name="submit" type="button" value=" Login "> -->
+
+            <button name="submit" id="buttoni1">Login</button>
+
+
             
-        </div>
+            
+            
+            <input type="button2" id="button2" value="Go Back" onclick="window.location = 'index.php';">
+           
         
+        </form>
+
+    </div>
 
 
-    </body>
+
+</body>
+
 </html>
