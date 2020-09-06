@@ -13,7 +13,7 @@
 }
 
 .li-bar a {
-    display: block;
+	display: block;
     color: #D6D6D5;
     text-align: center;
     padding: 14px 16px;
@@ -47,6 +47,7 @@
 .li-bar a:hover {
     opacity: 1;
 }
+
 
 input[type=text], select {
     width: 100%;
@@ -84,25 +85,24 @@ input[type=text], select {
 
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    outline: none;
-    font-family: 'Josefin Sans', sans-serif;
-}
 
 body {
     background: #f1f0eb;;
+    margin: 0;
+	padding: 0;
+
+	overflow: hidden;
+	color: #fff;
+	font-family: Arial;
+	font-size: 12px;
 }
 
 .wrapper {
-    position: absolute;
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    
     max-width: 450px;
-    width: 100%;
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 30px;
     background: #fff;
     padding: 45px;
     border-radius: 5px;
