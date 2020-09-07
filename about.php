@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 
@@ -11,15 +12,68 @@
 <body>
 
     <ul class="nav-bar">
-        <li class="li-bar"><a href="index.php">Home</a></li>
+        <?php
+
+        include('session.php');
+        if(isset($_SESSION['User'])){
+            echo '<li class="li-bar"><a href="Logged-In.php">Home</a></li>
+            <li class="li-bar"><a href="contact.php">Contact</a></li>
+            <li class="li-bar"><a href="about.php">About</a></li>
+            ';
+        }
+        else{
+            echo '<li class="li-bar"><a href="index.php">Home</a></li>
+            <li class="li-bar"><a href="contact.php">Contact</a></li>
+            <li class="li-bar"><a href="about.php">About</a></li>
+            <li class="li-bar"><a href="login.html">Login</a></li>
+            <li class="li-bar"><a href="signup.html">Sign Up</a></li>
+            ';
+        }
+
+
+        
+
+        
+       
+    ?>
+        
         <li class="li-bar"><a href="news.html">News</a></li>
-        <li class="li-bar"><a href="contact.html">Contact</a></li>
-        <li class="li-bar"><a href="about.html">About</a></li>
-        <li class="li-bar"><a href="login.html">Login</a></li>
-        <li class="li-bar"><a href="signup.html">Sign Up</a></li>
+    
         <li class="lisrch">
             <div class="searchi"><input type="text" id="fname" name="firstname" placeholder="Search"></div>
         </li>
+
+
+        <li class="lisrch">
+
+         <div class="navbar">
+        
+             <div class="dropdown">
+                 <?php
+
+                    include('session.php');
+                    if(isset($_SESSION['User'])){
+                        
+                        echo '<button class="dropbtn">
+                        <i> '.$login_session.' </i>
+                           <i class="fa fa-caret-down"></i>
+                         </button>
+                         <div class="dropdown-content">
+                            <a href="logout.php">Logout</a>
+                                    <!-- <a href="#">Link 2</a>
+                                    <a href="#">Link 3</a> -->
+                         </div>';
+                    
+                    }
+
+
+                 ?>
+            
+             </div>
+             </div>
+        
+        </li>
+
     </ul>
 
     <div class="p10">
