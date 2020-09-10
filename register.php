@@ -9,6 +9,7 @@ $conn = mysqli_connect("localhost", "snap", "snap1647", "web_login");
         $email = $_POST['email'];
         $phone = $_POST['phone'];
         $password = $_POST['password'];
+        $role = 'USER';
 
 
 
@@ -25,7 +26,7 @@ $conn = mysqli_connect("localhost", "snap", "snap1647", "web_login");
             
         if(count($errors) == 0){
             $password = md5($password);
-            $sql = "INSERT INTO login(Username,Password,Phone,Email) values('$username', '$password','$phone','$email')";
+            $sql = "INSERT INTO login(Username,Password,Phone,Email,Role) values('$username', '$password','$phone','$email','$role')";
             mysqli_query($conn,$sql);
             header("location:login.html");
         }
