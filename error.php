@@ -1,18 +1,21 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <title>Contact Us</title>
-    <link rel="stylesheet" href="css/contactus.css">
-    <script  src="js/cripts.js"></script>
+    <meta charset="UTF-8">
+    <title>Error</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
 
-
+    <style type="text/css">
+        .wrapper{
+            width: 750px;
+            margin: 0 auto;
+        }
+    </style>
 </head>
-
 <body>
-
-    <ul class="nav-bar">
-    <?php
+<ul class="nav-bar">
+<?php
 
 include('session.php');
 if(isset($_SESSION['User'])){
@@ -44,8 +47,9 @@ else{
 
 
 ?>
+        
         <li class="li-bar"><a href="news.html">News</a></li>
-
+    
         <li class="lisrch">
             <div class="searchi"><input type="text" id="fname" name="firstname" placeholder="Search"></div>
         </li>
@@ -59,7 +63,7 @@ else{
                  <?php
 
                     include('session.php');
-                    if(isset($_SESSION['Logged'])){
+                    if(isset($_SESSION['User'])){
                         
                         echo '<button class="dropbtn">
                         <i> '.$login_session.' </i>
@@ -82,38 +86,19 @@ else{
         </li>
 
     </ul>
-
-   <div class="headd">
-       <h1 class="mix">CONTACT US</h1>
-       
-       <h3 >We'd <img src="https://img.icons8.com/ios/50/000000/like.png"/> to help!</h3>
-       <br>
-       <p>We like to create things with fun, open-minded people. Feel free to say hello!</p>
-   </div>
-
-
     <div class="wrapper">
-     
-        <div id="error_message">
-
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="page-header">
+                        <h1>Invalid Request</h1>
+                    </div>
+                    <div class="alert alert-danger fade in">
+                        <p>Sorry, you've made an invalid request. Please <a href="index.php" class="alert-link">go back</a> and try again.</p>
+                    </div>
+                </div>
+            </div>        
         </div>
-        <form action="" id="myform" onsubmit="return validate();">
-            <div class="input_field">
-                <input type="text" placeholder="Your Name" id="name">
-            </div>
-            <div class="input_field">
-                <input type="text" placeholder="Email" id="email">
-            </div>
-            <div class="input_field">
-                <textarea placeholder="Message" id="message"></textarea>
-            </div>
-            <div class="btn">
-                <input type="submit">
-            </div>
-        </form>
     </div>
-
-
 </body>
-
 </html>

@@ -1,9 +1,16 @@
-
+<?php
+include('session.php');
+    if(isset($_SESSION['Logged'])){
+        header("location: Logged-In.php"); // Redirecting To Home Page
+    }
+    ?>
 <!DOCTYPE html>
 <html>
 
 <head>
     <title>WEB</title>
+
+    
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -19,6 +26,14 @@ if(isset($_SESSION['User'])){
     echo '<li class="li-bar"><a href="Logged-In.php">Home</a></li>
     <li class="li-bar"><a href="contact.php">Contact</a></li>
     <li class="li-bar"><a href="about.php">About</a></li>
+    ';
+}
+else if(isset($_SESSION['Admin'])){
+    echo '<li class="li-bar"><a href="Logged-In.php">Home</a></li>
+    <li class="li-bar"><a href="contact.php">Contact</a></li>
+    <li class="li-bar"><a href="about.php">About</a></li>
+    <li class="li-bar"><a href="create.php">Add Phone</a></li>
+    <li class="li-bar"><a href="products.php">All Phones</a></li>
     ';
 }
 else{
@@ -59,98 +74,49 @@ else{
     
 
     <div>
+  
 
         <div class="cont">
-            <div class="item">
-                <div class="image-item"><img
-                        src="https://tekshanghai.com/wp-content/uploads/2019/09/iPhone11_pro_3.jpg">
-                </div>
-                <h3>IPhone</h3>
-                <h5>Starting $999</h5>
-                <p>
-                    Triple-camera system (Ultra Wide, Wide, Telephoto)
-                    Up to 20 hours of video playback1
-                    Water resistant to a depth of 4 meters for up to 30 minutes2
-                    5.8” or 6.5” Super Retina XDR display3
-                </p>
-                <button class="item-button">Buy</button>
-
-            </div>
-            <div class="item">
-                <div class="image-item"><img
-                        src="https://tekshanghai.com/wp-content/uploads/2019/09/iPhone11_pro_3.jpg">
-                </div>
-                <h3>IPhone</h3>
-                <h5>Starting $999</h5>
-                <p>
-                    Triple-camera system (Ultra Wide, Wide, Telephoto)
-                    Up to 20 hours of video playback1
-                    Water resistant to a depth of 4 meters for up to 30 minutes2
-                    5.8” or 6.5” Super Retina XDR display3
-                </p>
-                <button class="item-button">Buy</button>
-
-            </div>
-            <div class="item">
-                <div class="image-item"><img
-                        src="https://tekshanghai.com/wp-content/uploads/2019/09/iPhone11_pro_3.jpg">
-                </div>
-                <h3>IPhone</h3>
-                <h5>Starting $999</h5>
-                <p>
-                    Triple-camera system (Ultra Wide, Wide, Telephoto)
-                    Up to 20 hours of video playback1
-                    Water resistant to a depth of 4 meters for up to 30 minutes2
-                    5.8” or 6.5” Super Retina XDR display3
-                </p>
-                <button class="item-button">Buy</button>
-
-            </div>
-            <div class="item">
-                <div class="image-item"><img
-                        src="https://tekshanghai.com/wp-content/uploads/2019/09/iPhone11_pro_3.jpg">
-                </div>
-                <h3>IPhone</h3>
-                <h5>Starting $999</h5>
-                <p>
-                    Triple-camera system (Ultra Wide, Wide, Telephoto)
-                    Up to 20 hours of video playback1
-                    Water resistant to a depth of 4 meters for up to 30 minutes2
-                    5.8” or 6.5” Super Retina XDR display3
-                </p>
-                <button class="item-button">Buy</button>
-
-            </div>
-            <div class="item">
-                <div class="image-item"><img
-                        src="https://tekshanghai.com/wp-content/uploads/2019/09/iPhone11_pro_3.jpg">
-                </div>
-                <h3>IPhone</h3>
-                <h5>Starting $999</h5>
-                <p>
-                    Triple-camera system (Ultra Wide, Wide, Telephoto)
-                    Up to 20 hours of video playback1
-                    Water resistant to a depth of 4 meters for up to 30 minutes2
-                    5.8” or 6.5” Super Retina XDR display3
-                </p>
-                <button class="item-button">Buy</button>
-
-            </div>
-            <div class="item">
-                <div class="image-item"><img
-                        src="https://tekshanghai.com/wp-content/uploads/2019/09/iPhone11_pro_3.jpg">
-                </div>
-                <h3>IPhone</h3>
-                <h5>Starting $999</h5>
-                <p>
-                    Triple-camera system (Ultra Wide, Wide, Telephoto)
-                    Up to 20 hours of video playback1
-                    Water resistant to a depth of 4 meters for up to 30 minutes2
-                    5.8” or 6.5” Super Retina XDR display3
-                </p>
-                <button class="item-button">Buy</button>
-
-            </div>
+        <?php
+                    // Include config file
+                  
+                    require_once "config.php";
+                    
+                    // Attempt select query execution
+                    $sql = "SELECT * FROM phone";
+                    if($result = mysqli_query($link, $sql)){
+                        if(mysqli_num_rows($result) > 0){
+                            
+                                while($row = mysqli_fetch_array($result)){
+                                        
+                                        echo "<div class='item'>";
+                                        echo "<a href='./read.php?id=".$row['id']."'>";
+                                        echo "<div class='image-item'><img src='img/".$row['profile_image']."'>";   
+                                        echo '</div>';
+                                        echo "</a>";
+                                        echo "<h3>" . $row['name'] . "</h3>";
+                                        echo "<h5>Starting at " . $row['price'] . " €</h5>";
+                                        echo "<p>About this phone : " . $row['description'] . "</p>";
+                                        echo "<button class='item-button'>Buy</button>";
+                                        
+                                        echo "</div>";
+                                       
+                                }
+                                echo "</tbody>";                            
+                            echo "</table>";
+                            // Free result set
+                            mysqli_free_result($result);
+                        } else{
+                            echo "<p class='lead'><em>No records were found.</em></p>";
+                        }
+                    } else{
+                        echo "ERROR: Could not able to execute $sql. " . mysqli_error($link);
+                    }
+ 
+                    // Close connection
+                    mysqli_close($link);
+                    ?>   
+           
 
 
         </div>

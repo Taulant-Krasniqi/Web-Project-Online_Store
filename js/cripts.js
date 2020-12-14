@@ -25,3 +25,10 @@ function validate(){
     alert("Form Submitted Successfully!");
     return true;
   }
+
+  function test(){
+
+    var test = document.getElementById("test1").value;
+    test = " asd"
+
+  }

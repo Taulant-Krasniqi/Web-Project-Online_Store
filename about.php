@@ -12,30 +12,38 @@
 <body>
 
     <ul class="nav-bar">
-        <?php
+    <?php
 
-        include('session.php');
-        if(isset($_SESSION['User'])){
-            echo '<li class="li-bar"><a href="Logged-In.php">Home</a></li>
-            <li class="li-bar"><a href="contact.php">Contact</a></li>
-            <li class="li-bar"><a href="about.php">About</a></li>
-            ';
-        }
-        else{
-            echo '<li class="li-bar"><a href="index.php">Home</a></li>
-            <li class="li-bar"><a href="contact.php">Contact</a></li>
-            <li class="li-bar"><a href="about.php">About</a></li>
-            <li class="li-bar"><a href="login.html">Login</a></li>
-            <li class="li-bar"><a href="signup.html">Sign Up</a></li>
-            ';
-        }
+include('session.php');
+if(isset($_SESSION['User'])){
+    echo '<li class="li-bar"><a href="Logged-In.php">Home</a></li>
+    <li class="li-bar"><a href="contact.php">Contact</a></li>
+    <li class="li-bar"><a href="about.php">About</a></li>
+    ';
+}
+else if(isset($_SESSION['Admin'])){
+    echo '<li class="li-bar"><a href="Logged-In.php">Home</a></li>
+    <li class="li-bar"><a href="contact.php">Contact</a></li>
+    <li class="li-bar"><a href="about.php">About</a></li>
+    <li class="li-bar"><a href="create.php">Add Phone</a></li>
+    <li class="li-bar"><a href="products.php">All Phones</a></li>
+    ';
+}
+else{
+    echo '<li class="li-bar"><a href="index.php">Home</a></li>
+    <li class="li-bar"><a href="contact.php">Contact</a></li>
+    <li class="li-bar"><a href="about.php">About</a></li>
+    <li class="li-bar"><a href="login.html">Login</a></li>
+    <li class="li-bar"><a href="signup.html">Sign Up</a></li>
+    ';
+}
 
 
-        
 
-        
-       
-    ?>
+
+
+
+?>
         
         <li class="li-bar"><a href="news.html">News</a></li>
     
@@ -52,7 +60,7 @@
                  <?php
 
                     include('session.php');
-                    if(isset($_SESSION['User'])){
+                    if(isset($_SESSION['Logged'])){
                         
                         echo '<button class="dropbtn">
                         <i> '.$login_session.' </i>
